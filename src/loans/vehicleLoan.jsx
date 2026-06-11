@@ -2,7 +2,7 @@ import React from "react";
 import BookConsultancy from "../../components/bookConsultancy";
 import Vehicleloans from "../assets/loans/vechileloanbanner.png";
 import Vechileloanbanner from "../assets/loans/vehicleloans.png";
-import Flexiblerepayment from "../assets/loans/flexible-Repayment-Options.png";
+import Flexiblerepayment from "../assets/loans/Flexible-Repayment-Options.png";
 import Necessary from "../assets/loans/necessarydocuments.png";
 import Approval from "../assets/loans/approval.png";
 import QuickApprol from "../assets/loans/Quickapproval.png";
@@ -132,11 +132,11 @@ export default function Vehicleloan() {
             <ol className="m-0 pl-[18px] text-[#1f2937] flex flex-col gap-2.5 text-xs leading-[1.5] list-decimal">
               {Keyfeatures.map((item) => (
                 <li key={item.title}>
-                  <strong className="text-[#0b0b0b] font-bold">{item.title}:</strong> {item.description}
+                  <strong className="text-[#0b0b0b] font-bold">{item.title}</strong> {item.description}
                 </li>
               ))}
             </ol>
-            <img className="w-full rounded-6 mt-2.5 mb-3 block h-auto" src={Vehicleloans} alt="Mutual fund investments banner" />
+            <img className="w-full rounded-6 mt-2.5 mb-3 block h-auto" src={Vehicleloans} alt="Vehicle loans banner" />
             
             <div className="m-0 mb-2.5 text-[#3c4453] text-[13px] leading-[1.55]">
               <span className="font-bold mr-1">5.</span><strong className="text-[#0b0b0b] font-bold">Eligibility</strong>
@@ -152,7 +152,7 @@ export default function Vehicleloan() {
             <ol className="m-0 pl-[18px] text-[#1f2937] flex flex-col gap-2.5 text-xs leading-[1.5] list-decimal">
               {benefits.map((item) => (
                 <li key={item.title}>
-                  <strong className="text-[#0b0b0b] font-bold">{item.title}:</strong> {item.description}
+                  <strong className="text-[#0b0b0b] font-bold">{item.title}</strong> {item.description}
                 </li>
               ))}
             </ol>
@@ -178,7 +178,7 @@ export default function Vehicleloan() {
             <ol className="m-0 pl-[18px] text-[#1f2937] flex flex-col gap-2.5 text-xs leading-[1.5] list-decimal">
               {chooseReasons.map((item, index) => (
                 <li key={index}>
-                  <strong className="text-[#0b0b0b] font-bold">{item.title}</strong> {item.text}
+                  {item.text}
                 </li>
               ))}
             </ol>
@@ -203,7 +203,7 @@ export default function Vehicleloan() {
             <ol className="m-0 pl-[18px] text-[#1f2937] flex flex-col gap-2.5 text-xs leading-[1.5] list-decimal">
               {Documentsrequired.map((item, index) => (
                 <li key={index}>
-                  <strong className="text-[#0b0b0b] font-bold">{item.title}</strong> {item.text}
+                  {item.text}
                 </li>
               ))}
             </ol>
@@ -211,7 +211,7 @@ export default function Vehicleloan() {
 
           {/* Card Module 6: Disclaimer and final UI Actions */}
           <article className="bg-white rounded-12 p-[14px_16px] max-sm:p-3 shadow-[0_12px_24px_rgba(0,0,0,0.06)] border border-[#e5e7eb]">
-            <h1 className="m-0 mb-2 text-[#7ab600] text-base font-bold">Terms & Conditions</h1>
+            <h2 className="m-0 mb-2 text-[#7ab600] text-base font-bold">Terms & Conditions</h2>
             <p className="m-0 mb-2.5 text-[#3c4453] text-[13px] leading-[1.55]">
               Interest rates and processing fees are subject to change as per the bank’s discretion.
             </p>
