@@ -12,7 +12,7 @@ import PropertyValuation from "../assets/loans/Propertyval.png";
 import ApprovalandDis from "../assets/loans/Approvalanddiss.png";
 import Mngeyourole from "../assets/loans/Manageyourloan.png";
 import banner2 from "../assets/loans/img1.png";
-import InvestForm from "../loans/investFormshare";
+import InvestForm from "./investFormshare";
 
 const benefits = [
   {

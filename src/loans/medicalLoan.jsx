@@ -1,6 +1,6 @@
 import React from "react";
 import BookConsultancy from "../../components/bookConsultancy";
-import InvestForm from "../loans/investFormmedical";
+import InvestForm from "./investFormmedical";
 import coverImg from "../assets/loans/medicalloann.png";
 import banner2 from "../assets/loans/Medical-Loan (1).webp";
 import flexibleLoanAmount from "../assets/loans/Flexible-Loan-Amounts.png";

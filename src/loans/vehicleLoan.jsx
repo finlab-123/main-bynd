@@ -1,7 +1,7 @@
 import React from "react";
 import BookConsultancy from "../../components/bookConsultancy";
-import Vehicleloans from "../assets/loans/vechileloanbanner.png";
-import Vechileloanbanner from "../assets/loans/vehicleloans.png";
+import Vehicleloans from "../assets/loans/vehicleloanbanner.png";
+import Vehicleloanbanner from "../assets/loans/vehicleloans.png";
 import Flexiblerepayment from "../assets/loans/Flexible-Repayment-Options.png";
 import Necessary from "../assets/loans/necessarydocuments.png";
 import Approval from "../assets/loans/approval.png";
@@ -9,7 +9,7 @@ import QuickApprol from "../assets/loans/Quickapproval.png";
 import Attractiveinterestrate from "../assets/loans/Attractiveinterestrate.png";
 import Insurancecoverage from "../assets/loans/insurancecoverage.png";
 import applicationform from "../assets/loans/applicationform.png";
-import InvestForm from "../loans/investFormVehicle";
+import InvestForm from "./investFormVehicle";
 
 const benefits = [
   {
@@ -101,7 +101,7 @@ export default function Vehicleloan() {
       {/* Structural Responsive Hero Image Container */}
       <div 
         className="w-full relative rounded-[20px] overflow-hidden bg-center bg-no-repeat bg-cover flex items-center h-[650px] min-[1400px]:h-[720px] max-[1200px]:h-[520px] max-md:h-[340px] max-md:rounded-[14px] max-sm:h-[240px] max-sm:rounded-[10px]"
-        style={{ backgroundImage: `url(${Vechileloanbanner})` }}
+        style={{ backgroundImage: `url(${Vehicleloanbanner})` }}
       >
         <div className="absolute bottom-10 right-10 flex justify-end items-end z-[2] max-md:right-5 max-md:bottom-5 max-sm:right-3.5 max-sm:bottom-3.5">
           <InvestForm

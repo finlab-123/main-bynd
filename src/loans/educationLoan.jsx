@@ -1,13 +1,13 @@
 import React from 'react';
 import BookConsultancy from "../../components/bookConsultancy";
-import Flexiblerepayment from "../assets/loans/flexible-Repayment-Options.png";
+import Flexiblerepayment from "../assets/loans/Flexible-Repayment-Options.png";
 import Necessary from "../assets/loans/necessarydocuments.png";
 import Approval from "../assets/loans/approval.png";
 import QuickApprol from "../assets/loans/Quickapproval.png";
 import Attractiveinterestrate from "../assets/loans/Attractiveinterestrate.png";
 import Insurancecoverage from "../assets/loans/insurancecoverage.png";
 import applicationform from "../assets/loans/applicationform.png";
-import InvestForm from "../loans/investFormeducation";
+import InvestForm from "./investFormeducation";
 import Edubanner from "../assets/loans/edubanner.png";
 import Eduimg1 from "../assets/loans/Eduimg1.png";
 import EmiCalculator from '../../components/EmiCalculator';
@@ -114,10 +114,12 @@ export default function Educationloan() {
                         <h2 className="m-0 mb-2 text-[#7ab600] text-base font-bold">Key Features</h2>
 
                         <ol className="m-0 pl-[18px] text-gray-800 text-xs line-height-[1.5] list-decimal block">
-                            {Keyfeatures.map((item) => (
-                                <li key={item.title} className="mb-2.5">
-                                    <strong>{item.title}:</strong> {item.description}
-                                </li>
+                            {Keyfeatures?.map((item) => (
+                                item?.title && (
+                                    <li key={item.title} className="mb-2.5">
+                                        <strong>{item.title}:</strong> {item.description || ""}
+                                    </li>
+                                )
                             ))}
                         </ol>
 
@@ -136,10 +138,12 @@ export default function Educationloan() {
                         <h2 className="m-0 mb-2 text-[#7ab600] text-base font-bold">Why Choose Our Education Loan?</h2>
 
                         <ol className="m-0 pl-[18px] text-gray-800 text-xs line-height-[1.5] list-decimal block">
-                            {benefits.map((item) => (
-                                <li key={item.title} className="mb-2.5">
-                                    <strong>{item.title}</strong> {item.description}
-                                </li>
+                            {benefits?.map((item) => (
+                                item?.title && (
+                                    <li key={item.title} className="mb-2.5">
+                                        <strong>{item.title}</strong> {item.description || ""}
+                                    </li>
+                                )
                             ))}
                         </ol>
 
@@ -151,10 +155,12 @@ export default function Educationloan() {
                                 { icon: Attractiveinterestrate, label: "Attractive Interest Rates" },
                                 { icon: Insurancecoverage, label: "Insurance Coverage" },
                             ].map(({ icon, label }) => (
-                                <div key={label} className="flex flex-col gap-1.5 items-center text-center text-[11px] text-[#6b6f76]">
-                                    <img src={icon} alt={label} className="w-[72px] h-[72px] object-cover mx-auto" />
-                                    <span>{label}</span>
-                                </div>
+                                label && (
+                                    <div key={label} className="flex flex-col gap-1.5 items-center text-center text-[11px] text-[#6b6f76]">
+                                        {icon && <img src={icon} alt={label} className="w-[72px] h-[72px] object-cover mx-auto" />}
+                                        <span>{label}</span>
+                                    </div>
+                                )
                             ))}
                         </div>
                     </article>
@@ -169,10 +175,12 @@ export default function Educationloan() {
                         <h2 className="m-0 mb-2 text-[#7ab600] text-base font-bold">How It Apply</h2>
 
                         <ol className="m-0 pl-[18px] text-gray-800 text-xs line-height-[1.5] list-decimal block">
-                            {chooseReasons.map((item, index) => (
-                                <li key={index} className="mb-2.5">
-                                    {item.text}
-                                </li>
+                            {chooseReasons?.map((item, index) => (
+                                item?.text && (
+                                    <li key={index} className="mb-2.5">
+                                        {item.text}
+                                    </li>
+                                )
                             ))}
                         </ol>
 
@@ -183,10 +191,12 @@ export default function Educationloan() {
                                 { icon: Necessary, label: "Document Submit" },
                                 { icon: Approval, label: "Approval" },
                             ].map(({ icon, label }) => (
-                                <div key={label} className="flex flex-col gap-1.5 items-center text-center text-[11px] text-[#6b6f76]">
-                                    <img src={icon} alt={label} className="w-[70px] h-[70px] object-cover mx-auto" />
-                                    <span>{label}</span>
-                                </div>
+                                label && (
+                                    <div key={label} className="flex flex-col gap-1.5 items-center text-center text-[11px] text-[#6b6f76]">
+                                        {icon && <img src={icon} alt={label} className="w-[70px] h-[70px] object-cover mx-auto" />}
+                                        <span>{label}</span>
+                                    </div>
+                                )
                             ))}
                         </div>
                     </article>
@@ -195,10 +205,12 @@ export default function Educationloan() {
                     <article className="bg-white rounded-xl p-3 sm:p-[14px_16px] shadow-[0_12px_24px_rgba(0,0,0,0.06)] border border-gray-200">
                         <h2 className="m-0 mb-2 text-[#7ab600] text-base font-bold">Documents Required</h2>
                         <ol className="m-0 pl-[18px] text-gray-800 text-xs line-height-[1.5] list-decimal block">
-                            {Documentsrequired.map((item, index) => (
-                                <li key={index} className="mb-2.5">
-                                    {item.text}
-                                </li>
+                            {Documentsrequired?.map((item, index) => (
+                                item?.text && (
+                                    <li key={index} className="mb-2.5">
+                                        {item.text}
+                                    </li>
+                                )
                             ))}
                         </ol>
                     </article>
